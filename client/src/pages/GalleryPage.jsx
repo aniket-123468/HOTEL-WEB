@@ -113,7 +113,7 @@ export default function GalleryPage() {
       <header className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden -mt-20">
         <div className="absolute inset-0 hero-mask">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHkzjd21WjMrhpDvKgqwZkajIUvSRyR7RPdgp9b0FTzcMmM3XsVXz4m5jJPQtq64cGHXWyhtdFW0Ckq2uOtGrh-9lJxA9M8m9RLJ7HV6x6uL8qzHkh3iMLY0RaBl7I4pEGFWK5vK_vMExXbTKj-JMM_oQjxX431NGxNLll40sv2pCnhP7uqWAK4efDqR9WRjbMVXnhnvWzXmxtCyw18n9-Ptklzayw93qpYpomRF8a-S12L1T4d2wDaCcvLeZEyDarz7XNf19JtRc"
+            src={imgGrandLobby}
             alt="Delhi Line Hotel facade at dusk — Mughal-inspired arches, champagne gold illumination"
             className="w-full h-full object-cover"
             loading="eager"
@@ -283,7 +283,7 @@ export default function GalleryPage() {
 
           <Animate className="w-full md:w-1/2 aspect-video bg-white shadow-2xl relative overflow-hidden group">
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsAXVsZfInCZ-lJbb4abGG3YkbPd9DmKC0gY0AgK1-G_MEXslNkCjdYfVh1Fevv_GxeoKh_ow_c0PK6pDeU0b--lf43xCzCb-oQ0IyNkLlc9xqQnizm5cOcjobd9ghnJtBNn3GZ_A-aMOKHugk6TMR9IE7rhaIJ68UnZLdxjlNqYEt8TgVLOGbb2NOzQROXqbWVYKhR_vzluEtulNtlpFavOvXuXKzJADzcsLTDMZu7wX2BLRZYpWRP-bjN96Xwz_gofVouhigTWY"
+              src={imgHeritageCorridor}
               alt="Delhi Line Hotel main entrance at night — concierges in traditional attire"
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               loading="lazy"

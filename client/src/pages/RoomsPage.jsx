@@ -75,7 +75,7 @@ export default function RoomsPage() {
       <header className="relative h-[60vh] overflow-hidden flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8NONZCWdsyBYehVqoVUei5X24txmbghszfY-QVouYCzpBMCnU_041atRiILWNmIuYz852F6vfO4pZ1ceWEWuYGaugTmihjncRN5Fgy0nD-Mr9ZIpRCnkygUOrKDOAY4CS_lJkhCYBCR63nZZ_hl3U-TYwx3tnCv7lQNKveVI7m3kS2y7gKhjg2hRRB81KwEMh10wqjFXtgIddNxD2ULPUm2EiYQRs2pBwJ_J6ikSsSDGexM2seCq9j3_1PHsJBZGDSmukexffvp8"
+            src={imgHeritageCorridor}
             alt="Luxury hotel lobby in New Delhi — warm golden light through arched windows"
             className="w-full h-full object-cover"
           />

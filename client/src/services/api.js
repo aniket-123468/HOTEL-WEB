@@ -2,7 +2,7 @@ import axios from 'axios';
 import useAuthStore from '../store/authStore';
 
 const api = axios.create({
-  baseURL: import.meta.env.PROD ? '/api' : 'http://localhost:5000/api',
+  baseURL: '/api',
   withCredentials: true, // Crucial for sending refresh token cookies
 });
 
@@ -72,7 +72,7 @@ api.interceptors.response.use(
 
       try {
         const response = await axios.post(
-          `${api.defaults.baseURL}/auth/refresh`,
+          '/api/auth/refresh',
           {},
           { withCredentials: true }
         );

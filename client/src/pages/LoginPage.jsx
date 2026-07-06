@@ -5,6 +5,8 @@ import { Helmet } from 'react-helmet-async';
 import useAuthStore from '../store/authStore';
 import GoldDivider from '../components/GoldDivider';
 
+import imgGrandLobby from '../assets/hotel_grand_lobby.png';
+
 export default function LoginPage() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -39,7 +41,7 @@ export default function LoginPage() {
         {/* Left — decorative panel */}
         <div className="hidden lg:flex lg:w-[45%] relative overflow-hidden">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8NONZCWdsyBYehVqoVUei5X24txmbghszfY-QVouYCzpBMCnU_041atRiILWNmIuYz852F6vfO4pZ1ceWEWuYGaugTmihjncRN5Fgy0nD-Mr9ZIpRCnkygUOrKDOAY4CS_lJkhCYBCR63nZZ_hl3U-TYwx3tnCv7lQNKveVI7m3kS2y7gKhjg2hRRB81KwEMh10wqjFXtgIddNxD2ULPUm2EiYQRs2pBwJ_J6ikSsSDGexM2seCq9j3_1PHsJBZGDSmukexffvp8"
+            src={imgGrandLobby}
             alt="Delhi Line Hotel grand entrance"
             className="w-full h-full object-cover"
           />

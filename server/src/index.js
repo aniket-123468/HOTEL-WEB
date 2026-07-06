@@ -20,8 +20,11 @@ import paymentRoutes from './routes/payments.js';
 dotenv.config();
 
 // Connect to database
-connectDB();
+await connectDB();
 
+// Automatically seed data to ensure the app is fully functional
+const { seedData } = await import('./scripts/seed.js');
+await seedData();
 const app = express();
 
 // Body parser

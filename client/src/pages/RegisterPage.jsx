@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import useAuthStore from '../store/authStore';
 import GoldDivider from '../components/GoldDivider';
+import imgHeritageCorridor from '../assets/hotel_heritage_corridor.png';
 
 export default function RegisterPage() {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ export default function RegisterPage() {
         {/* Left — decorative panel */}
         <div className="hidden lg:flex lg:w-[45%] relative overflow-hidden">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDCCStM266WfD7_OZPVBL30HdRYfZ55H_CFd1OQ2A2QFJM1A2ozgbN5Wlr5fGssCFTtHZNIgiBiiNuyVRnWaaCnFk3p5KSxwNeCZF_eossxVN1XS8NFY2cpy7yrn6oI_CUd0vWhilK33JTA7ELzX3oSGn6QgVCT-ffrcrvENfsSyYeUkUy42JmzPh4qy0g69NpMOfzYaoetYHA-128qkYyB_wa-ZQMebUNKG-r107jfgKnsgQRuI0CupI5lu4SL8RFPJqalVl_fVY"
+            src={imgHeritageCorridor}
             alt="The Line Restaurant fine dining"
             className="w-full h-full object-cover"
           />

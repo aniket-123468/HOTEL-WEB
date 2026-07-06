@@ -1,11 +1,17 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import User from '../models/User.js';
 import Room from '../models/Room.js';
 import MenuItem from '../models/MenuItem.js';
 import GalleryImage from '../models/GalleryImage.js';
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load .env from server root regardless of where the script is executed from
+dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 const users = [
   {
@@ -196,11 +202,16 @@ const galleryImages = [
   },
 ];
 
-const seedData = async () => {
+export const seedData = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI);
-    console.log('Connected to MongoDB for seeding...');
+    // Check if users already exist to avoid reseeding unnecessarily
+    const count = await User.countDocuments();
+    if (count > 0) {
+      console.log('Database already seeded, skipping...');
+      return;
+    }
 
+    console.log('Seeding database...');
     // Clear existing data
     await User.deleteMany();
     await Room.deleteMany();
@@ -227,11 +238,12 @@ const seedData = async () => {
     console.log(`Seeded ${galleryImages.length} Gallery Images.`);
 
     console.log('Database seeded successfully!');
-    process.exit(0);
   } catch (error) {
     console.error('Error seeding database:', error.message);
-    process.exit(1);
   }
 };
 
-seedData();
+// If run directly (not imported)
+if (import.meta.url === `file://${process.argv[1]}`) {
+  mongoose.connect(process.env.MONGODB_URI).then(() => seedData().then(() => process.exit(0)));
+}

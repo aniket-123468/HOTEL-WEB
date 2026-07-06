@@ -7,6 +7,8 @@ import api from '../services/api';
 
 import imgFineDining from '../assets/hotel_fine_dining.png';
 import imgBreakfastSpread from '../assets/hotel_breakfast_spread.png';
+import imgGrandLobby from '../assets/hotel_grand_lobby.png';
+import imgSpaSanctuary from '../assets/hotel_spa_sanctuary.png';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -129,7 +131,7 @@ export default function DiningPage() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/40 z-10" />
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDCCStM266WfD7_OZPVBL30HdRYfZ55H_CFd1OQ2A2QFJM1A2ozgbN5Wlr5fGssCFTtHZNIgiBiiNuyVRnWaaCnFk3p5KSxwNeCZF_eossxVN1XS8NFY2cpy7yrn6oI_CUd0vWhilK33JTA7ELzX3oSGn6QgVCT-ffrcrvENfsSyYeUkUy42JmzPh4qy0g69NpMOfzYaoetYHA-128qkYyB_wa-ZQMebUNKG-r107jfgKnsgQRuI0CupI5lu4SL8RFPJqalVl_fVY"
+            src={imgFineDining}
             alt="Intimate fine dining table with candlelight at The Line restaurant"
             className="w-full h-full object-cover animate-slow-pulse"
           />
@@ -162,7 +164,7 @@ export default function DiningPage() {
           <div className="absolute -top-10 -left-10 w-40 h-40 border-l border-t border-secondary-fixed-dim/30 pointer-events-none" />
           <div className="bg-white p-4 shadow-ambient relative z-10">
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5TJ7L4_UkvKtz1jj8IBOXVDNwYKKjBNbNooTea0lmLIPO1EL1i5KMxMnZjJuvZUEf042JIq_Ns2c5RSxd8a3iUOjX-vmClUqHqQq6Vphzdr1yDubv7voTDsUaN3z_yDK3ZZcf6beqzFK9zOJNb6t_wgm1wolK7UroMzHKJdwxjPgJ-k1zeW3d1LAyHGK96SercnDbyjH_chFZJSkF3OM7ngmyHVDhFFN1FaC_dAOvmySigFgFvah3q-FXN3lxAhNsWSHU7OMQceo"
+              src={imgSpaSanctuary}
               alt="Chef Vikram Seth — Executive Chef at The Line Restaurant"
               className="w-full h-[600px] object-cover"
               loading="lazy"

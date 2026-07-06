@@ -56,10 +56,8 @@ const useAuthStore = create(
       checkAuth: async () => {
         try {
           const response = await api.post('/auth/refresh');
-          const { accessToken } = response.data;
-          // Fetch user profile or use cached info
-          // Since refresh responds with new access token, we can decode or just mark authenticated
-          set({ accessToken, isAuthenticated: true });
+          const { accessToken, user } = response.data;
+          set({ accessToken, user, isAuthenticated: true });
         } catch (error) {
           // Token refresh failed or no cookie, clear auth state
           set({ user: null, accessToken: null, isAuthenticated: false });

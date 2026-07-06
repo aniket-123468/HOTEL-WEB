@@ -238,7 +238,7 @@ export default function HomePage() {
             <AnimatedSection className="relative group">
               <div className="absolute inset-0 border border-secondary-fixed-dim translate-x-6 translate-y-6 -z-10 transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4" />
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4BV8PReU-_k6j_Rz6Yq57him5jsVkdkmXGJvELqzBTzpkiR4kJ7Nb7I6E4F0gzgTvM-RS592IBeBUok6qcoAlmAortcnTnKmwXo32mdKRMQ6FerGxJizkfOK0H7CNLV2XTgN2jgBcggryadCHI7ekE6RMVXTKC3_fAINji2KaPD0l4KEH0NSmVuLzFf907fCZzMc3gcvH19wF3KO9dVvFtLm8_NW3Lz1qTyZrbpbsQAObO7YJ_hLYtmPD6x6BwzFRbJlOxx09cOw"
+                src={imgFineDining}
                 alt="Signature dish at The Line — seared scallop with pea purée and edible gold leaf"
                 className="w-full aspect-square object-cover shadow-2xl"
               />
@@ -296,9 +296,10 @@ export default function HomePage() {
           {/* Map image — grayscale to color on hover */}
           <AnimatedSection className="h-[400px] bg-surface-container overflow-hidden">
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS-e0CsZKQj-8pOv7nMAurmCJkBEDHNpaBiPv22R_YfqdjdaPyIn5vRFL1RSvl7l2yBLWLnoEYttdEpXm9KOm7eCdyhZjTiZ35qbzpEaVtEmXIleB9kdSBSS2blJ77hlUb3QcwXMHv1skhMAZfN4S8qjC3FUteE6SavbjHFHVcPhDoo8cx0mzn4CKA0EDujoXjAkGF35zgw3SRzv4G854qklU5W7UFuvR7ESRuVW9MF0IS3vYVMxipB8JJuIadrkDCXwZZFrXep4U"
+              src={imgCourtyardGarden}
               alt="Map view of Delhi Line Hotel location in New Delhi"
-              className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"
+              className="w-full h-full object-cover grayscale opacity-70 transition-all duration-700 hover:grayscale-0 hover:opacity-100"
+              loading="lazy"
             />
           </AnimatedSection>
         </div>
