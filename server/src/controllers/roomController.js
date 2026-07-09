@@ -28,7 +28,7 @@ export const getRooms = async (req, res, next) => {
       filter.tier = tier;
     }
 
-    const rooms = await Room.find(filter);
+    const rooms = await Room.find(filter).lean();
 
     res.status(200).json({
       success: true,
@@ -45,7 +45,7 @@ export const getRooms = async (req, res, next) => {
 // @access  Public
 export const getRoom = async (req, res, next) => {
   try {
-    const room = await Room.findById(req.params.id);
+    const room = await Room.findById(req.params.id).lean();
 
     if (!room) {
       return res.status(404).json({

@@ -194,6 +194,7 @@ export default function GalleryPage() {
                   alt={img.alt}
                   className="w-full transition-transform duration-700"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 text-on-primary">
                   <span className="font-label-caps text-[10px] mb-2 tracking-widest opacity-80 uppercase">
@@ -287,6 +288,7 @@ export default function GalleryPage() {
               alt="Delhi Line Hotel main entrance at night — concierges in traditional attire"
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               loading="lazy"
+              decoding="async"
             />
           </Animate>
         </div>

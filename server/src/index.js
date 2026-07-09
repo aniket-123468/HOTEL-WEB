@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
+import compression from 'compression';
 import connectDB from './config/db.js';
 import errorHandler from './middleware/errorHandler.js';
 import { apiLimiter } from './middleware/rateLimiter.js';
@@ -29,6 +30,9 @@ const app = express();
 
 // Body parser
 app.use(express.json());
+
+// Compression
+app.use(compression());
 
 // Cookie parser
 app.use(cookieParser());

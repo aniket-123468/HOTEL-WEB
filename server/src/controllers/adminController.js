@@ -11,7 +11,7 @@ export const getAdminStats = async (req, res, next) => {
     const totalDiningReservations = await DiningReservation.countDocuments();
     const totalRooms = await Room.countDocuments();
     
-    const confirmedBookings = await Booking.find({ status: 'confirmed' });
+    const confirmedBookings = await Booking.find({ status: 'confirmed' }).lean();
     const revenue = confirmedBookings.reduce((acc, booking) => acc + (booking.totalAmount || 0), 0);
 
     res.status(200).json({

@@ -158,6 +158,7 @@ export default function RoomsPage() {
                       alt={room.name}
                       className="w-full aspect-[4/3] object-cover transition-transform duration-700"
                       loading={i === 0 ? 'eager' : 'lazy'}
+                      decoding={i === 0 ? 'auto' : 'async'}
                     />
                     <div className={`absolute top-6 ${imageRight ? 'right-6' : 'left-6'}`}>
                       <span className={`${tagBg} backdrop-blur-md px-4 py-2 font-label-caps text-[10px] tracking-widest border border-outline-variant`}>
@@ -263,6 +264,7 @@ export default function RoomsPage() {
                   alt="Luxury wellness spa with stone pool and Ayurvedic elements"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </Animate>
@@ -311,6 +313,7 @@ export default function RoomsPage() {
                   alt="Expert guide showing intricate details of a Mughal-era courtyard"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </Animate>

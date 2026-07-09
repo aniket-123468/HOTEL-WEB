@@ -244,6 +244,6 @@ export const seedData = async () => {
 };
 
 // If run directly (not imported)
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   mongoose.connect(process.env.MONGODB_URI).then(() => seedData().then(() => process.exit(0)));
 }

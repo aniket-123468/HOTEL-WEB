@@ -106,7 +106,7 @@ export const createBooking = async (req, res, next) => {
 // @access  Private/Admin
 export const getBookings = async (req, res, next) => {
   try {
-    const bookings = await Booking.find().populate('room', 'name tier').sort('-createdAt');
+    const bookings = await Booking.find().populate('room', 'name tier').sort('-createdAt').lean();
     res.status(200).json({
       success: true,
       count: bookings.length,

@@ -168,6 +168,7 @@ export default function DiningPage() {
               alt="Chef Vikram Seth — Executive Chef at The Line Restaurant"
               className="w-full h-[600px] object-cover"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-secondary px-8 py-10 text-on-secondary z-20">
@@ -273,6 +274,7 @@ export default function DiningPage() {
                           alt={item.name}
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
+                          decoding="async"
                         />
                       </div>
                       <div className="flex justify-between items-start mb-2">

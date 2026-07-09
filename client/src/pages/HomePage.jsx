@@ -105,6 +105,8 @@ export default function HomePage() {
               src={imgCourtyardGarden}
               alt="Mughal-style inner courtyard garden at twilight"
               className="w-full aspect-[4/5] object-cover shadow-2xl relative z-10"
+              loading="lazy"
+              decoding="async"
             />
           </AnimatedSection>
 
@@ -146,6 +148,8 @@ export default function HomePage() {
                 src={imgImperialSuite}
                 alt="Presidential suite with panoramic Delhi skyline view — king bed, ivory silk chairs"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
                 <span className="bg-surface/20 backdrop-blur-md text-white px-3 py-1 text-xs tracking-widest font-label-caps mb-4 w-fit">
@@ -165,6 +169,8 @@ export default function HomePage() {
                   src={imgHeritageCorridor}
                   alt="Heritage Chamber with mahogany writing desk and warm reading nook"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
                   <h3 className="text-white font-headline-sm text-headline-sm">Heritage Chambers</h3>
@@ -176,6 +182,8 @@ export default function HomePage() {
                   src={imgSpaSanctuary}
                   alt="Sanctuary Spa Room with carved stone soaking tub and courtyard garden view"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
                   <h3 className="text-white font-headline-sm text-headline-sm">Sanctuary Spa Rooms</h3>
@@ -241,6 +249,8 @@ export default function HomePage() {
                 src={imgFineDining}
                 alt="Signature dish at The Line — seared scallop with pea purée and edible gold leaf"
                 className="w-full aspect-square object-cover shadow-2xl"
+                loading="lazy"
+                decoding="async"
               />
             </AnimatedSection>
           </div>
@@ -298,8 +308,9 @@ export default function HomePage() {
             <img
               src={imgCourtyardGarden}
               alt="Map view of Delhi Line Hotel location in New Delhi"
-              className="w-full h-full object-cover grayscale opacity-70 transition-all duration-700 hover:grayscale-0 hover:opacity-100"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 opacity-80 hover:opacity-100 mix-blend-luminosity hover:mix-blend-normal"
               loading="lazy"
+              decoding="async"
             />
           </AnimatedSection>
         </div>

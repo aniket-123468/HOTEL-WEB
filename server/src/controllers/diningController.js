@@ -25,7 +25,7 @@ export const getMenuItems = async (req, res, next) => {
       filter.category = category;
     }
 
-    const menuItems = await MenuItem.find(filter);
+    const menuItems = await MenuItem.find(filter).lean();
 
     res.status(200).json({
       success: true,
@@ -66,7 +66,7 @@ export const createReservation = async (req, res, next) => {
 // @access  Private/Admin
 export const getReservations = async (req, res, next) => {
   try {
-    const reservations = await DiningReservation.find().sort('-createdAt');
+    const reservations = await DiningReservation.find().sort('-createdAt').lean();
     res.status(200).json({
       success: true,
       count: reservations.length,
